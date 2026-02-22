@@ -1,50 +1,5 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <title>Резюме — Завадська Діана</title>
-</head>
-<body>
-
-    <header>
-        <h1>Завадська Діана</h1>
-        <p>Студентка 3-го курсу кафедри Кібербезпеки</p>
-        <ul>
-            <li>Email: <a href="mailto:diana.zavadska.kb.2023@lpnu.ua">diana.zavadska.kb.2023@lpnu.ua</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/diana-zavadska-4764aa379/">Профіль LinkedIn</a></li>
-            <li>GitHub: <a href="https://github.com/Diana-Zavadska">GitHub Репозиторії</a></li>
-            <li>Місто: Львів, Україна</li>
-        </ul>
-    </header>
-
-    <main>
-        <section>
-            <h2>Технічні навички</h2>
-            <ul>
-                <li><strong>Мови програмування:</strong> С, С#, Python, PHP, SQL</li>
-                <li><strong>Інструменти:</strong> Linux (Ubuntu), XAMPP, Git, GitHub, WinMIPS64, Packet Tracer</li>
-                <li><strong>Веб-технології:</strong> HTML5, CSS3, Bootstrap, Angular, React</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Освіта</h2>
-            <p><strong>Національний університет "Львівська Політехніка"</strong></p>
-            <p>Бакалавр з Кібербезпеки, 3-й курс (2023 — Теперішній час)</p>
-        </section>
-
-        <section>
-            <h2>Сертифікація та курси</h2>
-            <ul>
-                <li>
-                    <strong>AWS Academy Cloud Foundation</strong> — Amazon Web Services (Серпень 2025)
-                </li>
-                <li>
-                    <strong>Google Cybersecurity Specialization</strong> — Coursera (Грудень 2024)
-                </li>
-            </ul>
-        </section>
-
+function Experience() {
+    return (
         <section>
             <h2>Навчальні проєкти</h2>
             <article>
@@ -98,13 +53,6 @@
             </ul>
             </article>
         </section>
-    </main>
-
-    <footer>
-        <hr>
-        <p id="os-details">Системна інформація: Завантаження...</p>
-        <p>&copy; 2026 | Створено Діаною Завадською</p>
-    </footer>
-
-</body>
-</html>
+    );
+}
+export default Experience;
