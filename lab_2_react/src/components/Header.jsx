@@ -2,15 +2,13 @@ import React from 'react';
 
 function Header({ toggleTheme, theme }) {
   return (
-    <header className="relative bg-white dark:bg-slate-950 text-slate-900 dark:text-white py-16 px-6 text-center shadow-2xl border-b border-slate-200 dark:border-blue-500/20 overflow-hidden transition-colors duration-500">
-      {/* Декоративний фон для стилю "кібербезпеки" */}
+    <header className="relative bg-gradient-to-b from-white to-blue-100 dark:bg-none dark:bg-slate-950 text-slate-900 dark:text-white py-16 px-6 text-center shadow-2xl border-b border-slate-200 dark:border-blue-500/20 overflow-hidden transition-colors duration-500">
       <div className="absolute inset-0 opacity-20 dark:opacity-10 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-600 via-transparent to-transparent dark:from-blue-500"></div>
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto">
         
-        {/* Кнопка перемикання теми (Завдання 4) */}
         <div className="flex justify-end mb-6">
           <button 
             onClick={toggleTheme}
