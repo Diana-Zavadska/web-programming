@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
+import HeroVisual from './components/HeroVisual'
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Experience from './components/Experience';
@@ -34,8 +35,11 @@ function App() {
 
   return (
     <div className={theme}>
-      <main className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-500">
-        <Header toggleTheme={toggleTheme} theme={theme} />
+      <main className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-500"> 
+        <div className="relative overflow-hidden bg-gradient-to-b from-white to-blue-50 dark:from-slate-950 dark:to-slate-900 border-b border-slate-200 dark:border-blue-500/20">
+          <HeroVisual />
+          <Header toggleTheme={toggleTheme} theme={theme} />
+        </div>
         <Skills />
         <Education />
         <Experience />
